@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var post in ViewBag.posts) {
+
+    <a href="post?id=@post.id">@post.title</a><br />
+
+}
